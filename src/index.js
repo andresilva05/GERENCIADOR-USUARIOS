@@ -3,9 +3,12 @@ import ReactDOM from "react-dom/client";
 import App from "./App";
 import GlobalStyle from "./globalStyle";
 
-ReactDOM.render(
+const rootElement = document.getElementById("root");
+const root = ReactDOM.createRoot(rootElement);
+
+root.render(
   <>
-    <App /> <GlobalStyle />{" "}
-  </>,
-  document.getElementById("root")
+    <App />
+    <GlobalStyle />
+  </>
 );
