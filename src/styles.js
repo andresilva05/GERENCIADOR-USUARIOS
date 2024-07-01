@@ -65,4 +65,18 @@ export const Input = styled.input`
     color: #FFFFFF;
 `;
 
-export const Button = styled.button``;
+export const Button = styled.button`
+    width: 342px;
+    height: 78px;
+
+    background: rgba(0,0,0,0.8);
+    border-radius: 14px;
+    border: none;
+    font-style:normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 28px;
+    
+    color:#ffffff;
+    cursor: pointer;
+`;

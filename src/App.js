@@ -1,6 +1,7 @@
 import React from "react";
 
 import People from './assets/people.svg'
+import Arrow from '.assets/arrow.svg'
 
 import {
   Container,
@@ -23,7 +24,7 @@ function App() {
      
      <InputLabel>Idade:</InputLabel>
         <Input placeholder="Idade"/>
-        <Button>Cadastrar</Button>
+        <Button>Cadastrar <img alt="seta" src={Arrow}/></Button>
       </ContainerItens>
     </Container>
   );
