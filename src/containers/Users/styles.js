@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import Background from "../../assets/background.svg";
 
 export const Container = styled.div`
@@ -42,6 +41,7 @@ export const ContainerItens = styled.div`
   padding: 50px 36px;
   height: 100vh;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+  min-height: calc(100vh - 170px);
 
   
 
@@ -51,48 +51,6 @@ export const ContainerItens = styled.div`
   }
 `;
 
-
-
-export const Button = styled(Link)`
-  width: 100%;
-  max-width: 342px;
-  height: 78px;
-  margin-top: 120px;
-  background: transparent;
-  border-radius: 14px;
-  border: 1px solid #fff;
-
-  font-style: normal;
-  font-weight: bold;
-  font-size: 17px;
-  line-height: 28px;
-
-  color: #ffffff;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  transition: opacity 0.3s;
-
- 
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.5;
-  }
-
-  img{ transform: rotateY(180deg);}
-
-  @media (max-width: 768px) {
-    height: 60px;
-    font-size: 16px;
-    gap: 10px;
-  }
-`;
 
 export const User = styled.li`
   display: flex;

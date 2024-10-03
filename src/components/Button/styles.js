@@ -1,12 +1,13 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
-export const Button = styled(Link)`
+
+export const Button = styled.button`
   width: 100%;
   height: 60px;
   margin-top: 20px; /* Ajuste para o botão mais próximo dos campos */
-  background: #333;
+  background: ${ props => props.isBack ? 'transparent' : '#333'};
   border-radius: 14px;
+  border: ${ props => props.isBack ? '1px solid #ffffff' : 'none'} ;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -23,6 +24,11 @@ export const Button = styled(Link)`
     transform: scale(0.98); /* Redução ao clicar */
   }
 
+  
+  img{
+     transform: ${ props => props.isBack && 'rotateY(180deg)'}
+     };
+     
   @media (max-width: 768px) {
     height: 50px;
     font-size: 16px;
