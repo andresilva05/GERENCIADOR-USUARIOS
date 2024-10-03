@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import Background from "./assets/background.svg";
+import { Link } from "react-router-dom";
+import Background from "../../assets/background.svg";
 
 export const Container = styled.div`
   background: url("${Background}");
@@ -9,6 +10,7 @@ export const Container = styled.div`
   align-items: center;
   gap: 40px;
   padding: 20px;
+  
 
   @media (max-width: 768px) {
     gap: 20px;
@@ -31,10 +33,17 @@ export const ContainerItens = styled.div`
     rgba(255, 255, 255, 0.6) 0.85%,
     rgba(255, 255, 255, 0.15) 100%
   );
+
+  width: 400px;  /* Largura fixa */
+  height: 200px; /* Altura fixa */
   border-radius: 61px 61px 0px 0px;
+  backdrop-filter: blur(45px);
+
   padding: 50px 36px;
   height: 100vh;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
+
+  
 
   @media (max-width: 768px) {
     padding: 30px 20px;
@@ -42,70 +51,22 @@ export const ContainerItens = styled.div`
   }
 `;
 
-export const H1 = styled.h1`
-  font-style: normal;
-  font-weight: bold;
-  font-size: 34px;
-  line-height: 40px;
-  text-align: center;
-  color: #ffffff;
-  margin-bottom: 80px;
 
-  @media (max-width: 768px) {
-    font-size: 28px;
-    margin-bottom: 40px;
-  }
-`;
 
-export const InputLabel = styled.p`
-  letter-spacing: -0.408px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  color: #eeeeee;
-  margin-left: 25px;
-
-  @media (max-width: 768px) {
-    margin-left: 10px;
-    font-size: 16px;
-  }
-`;
-
-export const Input = styled.input`
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 14px;
-  width: 100%;
-  max-width: 342px;
-  height: 58px;
-  padding-left: 25px;
-  margin-bottom: 34px;
-  border: none;
-  outline: none;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 28px;
-  color: #ffffff;
-
-  @media (max-width: 768px) {
-    padding-left: 15px;
-    font-size: 18px;
-  }
-`;
-
-export const Button = styled.button`
+export const Button = styled(Link)`
   width: 100%;
   max-width: 342px;
   height: 78px;
-  background: rgba(0, 0, 0, 0.8);
+  margin-top: 120px;
+  background: transparent;
   border-radius: 14px;
-  border: none;
+  border: 1px solid #fff;
+
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
   line-height: 28px;
+
   color: #ffffff;
   cursor: pointer;
   display: flex;
@@ -114,6 +75,8 @@ export const Button = styled.button`
   gap: 20px;
   transition: opacity 0.3s;
 
+ 
+
   &:hover {
     opacity: 0.8;
   }
@@ -121,6 +84,8 @@ export const Button = styled.button`
   &:active {
     opacity: 0.5;
   }
+
+  img{ transform: rotateY(180deg);}
 
   @media (max-width: 768px) {
     height: 60px;
