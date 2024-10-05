@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerItens = styled.div`
-  background: rgba(255, 255, 255, 0.8);
+  background: rgb(150, 147, 147);
   backdrop-filter: blur(10px); /* Adicionando um efeito de desfoque */
   border-radius: 20px; /* Ajustando bordas para um visual mais suave */
   padding: 40px 30px;
