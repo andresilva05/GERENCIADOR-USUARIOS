@@ -72,7 +72,7 @@ export const User = styled.li`
     font-weight: normal;
     font-size: 20px;
     line-height: 28px;
-    color: #ffffff;
+    color: #000000;
 
     @media (max-width: 768px) {
       font-size: 18px;
