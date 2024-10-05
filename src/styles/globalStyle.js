@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import Background from "../assets/background.svg";
 
 export default createGlobalStyle`
 
@@ -9,6 +10,10 @@ export default createGlobalStyle`
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
+body{
+    background: url(${Background}); /* Remover as aspas */
+    background-size: cover;
 
+}
 
 `;
