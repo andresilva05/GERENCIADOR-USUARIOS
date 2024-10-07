@@ -20,9 +20,3 @@ Este projeto é uma aplicação web simples que permite o cadastro, listagem e e
 - Node.js instalado.
 - Gerenciador de pacotes npm ou yarn.
 
-## Instalação
-
-1. Clone o repositório:
-
-```bash
-git clone https://github.com/andresilva05/user-management-app.git
