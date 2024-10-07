@@ -14,6 +14,7 @@ export const Button = styled.button`
   justify-content: center;
   gap: 10px;
   transition: background 0.3s, transform 0.2s; /* Adicionando transições mais suaves */
+  cursor: pointer;
 
   &:hover {
     background: #555; /* Mudança de cor ao passar o mouse */
