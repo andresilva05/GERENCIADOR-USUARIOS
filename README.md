@@ -1,14 +1,28 @@
-# Bem vindo(a) ao meu projeto!
+# Gerenciamento de Usuários - React
 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/andresilva05/PORTFOLIO/blob/master/LICENSE)
+Este projeto é uma aplicação web simples que permite o cadastro, listagem e exclusão de usuários. A aplicação foi desenvolvida utilizando **React.js** e se comunica com uma API local para armazenar as informações dos usuários.
 
-# Sobre o projeto
+## Funcionalidades
 
-Este projeto visa criar uma aplicação web simples que permite aos usuários cadastrar e excluir registros em uma única página. A aplicação é costruída utilizando a tecnologia de React.Js, 
-esse é o meu primeiro contato com a tecnologia.
-
-Obrigado por visitar e espero que aprecie o que encontrará aqui!
+- **Cadastrar novos usuários** com nome e idade.
+- **Listar todos os usuários** cadastrados.
+- **Deletar usuários** da lista.
 
 ## Tecnologias Utilizadas
 
-<img src="../src/assets/react.webp" alt="">
+- **React.js** - Biblioteca JavaScript para construção de interfaces de usuário.
+- **Styled Components** - Biblioteca para estilizar componentes de forma dinâmica em React.
+- **Axios** - Cliente HTTP baseado em Promises para fazer requisições à API.
+- **React Router** - Biblioteca para gerenciamento de rotas em SPA.
+
+## Pré-requisitos
+
+- Node.js instalado.
+- Gerenciador de pacotes npm ou yarn.
+
+## Instalação
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/andresilva05/user-management-app.git
