@@ -21,7 +21,7 @@ function Users() {
     // Como o useEffect não aceita uma função async diretamente, criamos uma função assíncrona dentro dele
     async function fetchUsers() {
       // Faz uma requisição GET à API para obter a lista de usuários
-      const { data: newUsers } = await axios.get("http://localhost:3001/users");
+      const { data: newUsers } = await axios.get("https://api-projeto-gerenciador-usuarios.vercel.app/users");
 
       setUsers(newUsers); // Atualiza o estado com os novos usuários
     }
@@ -31,7 +31,7 @@ function Users() {
   // Função para deletar um usuário
   async function deleteUser(userId) {
     // Faz uma requisição DELETE à API para remover o usuário pelo seu ID
-    await axios.delete(`http://localhost:3001/users/${userId}`);
+    await axios.delete(`https://api-projeto-gerenciador-usuarios.vercel.app/users/${userId}`);
     
     // Filtra a lista de usuários, removendo o que foi deletado
     const newUsers = users.filter((user) => user.id !== userId);

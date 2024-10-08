@@ -36,7 +36,7 @@ function App() {
     // Verifica se os campos estão válidos antes de prosseguir
     if (validarCampos()) {
       // Faz uma requisição POST para adicionar um novo usuário ao backend
-      const { data: newUser } = await axios.post("http://localhost:3001/users", {
+      const { data: newUser } = await axios.post("https://api-projeto-gerenciador-usuarios.vercel.app/users", {
         name: inputName.current.value, // Envia o valor do campo de nome
         age: inputAge.current.value, // Envia o valor do campo de idade
       });
